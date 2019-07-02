@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    // polaris(tiểu hùng) thuộc chòm sao ursa Minor(tiểu hùng == gấu nhỏ :))
+    // Aldebaran thuộc chòm sao Tarurus(kim ngưu)
+    // Deneb(thiên tân, đuôi của thiên nga) thuộc chòm sao Cygnus(thiên nga)
+    // Vega(chức nữ)  thuộc chòm sao Lyra(thiên cầm)
+    // Altair(Ngưu lang) thuộc Aquila(Thiên ưng)
+    // Dubhe(Bắc Đẩu) thuộc Ursa Major(Đại Hùng)
+    // Regulus(hoàng tử) thuộc Leo(sư tử)
+
+
+
+
+    let star = [ "Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let constellation = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+    function findStar() {
+        let x=prompt("nhập tên sao");
+        if(star.indexOf(x)!==-1){
+               if(x ==="Polaris")
+                   return "Ursa Minor";
+               else if(x==="Aldebaran") return "Tarurus";
+               else if(x==="Deneb") return "Cygnus";
+               else if(x==="Vega") return "Lyra";
+               else if(x==="Altair") return "Aquila";
+               else if(x==="Dubhe") return "Ursa";
+               else if(x==="Regulus") return "Leo";
+               else
+                   return "không tìm thấy chòm sao!";
+
+        }
+        else
+            return "không tìm thấy tên ngôi sao!";
+
+    }
+   let a =  findStar();
+    alert(a);
+</script>
+</body>
+</html>
